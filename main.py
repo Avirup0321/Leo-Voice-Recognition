@@ -48,7 +48,7 @@ def takecommand(): #this will take command from user
     
     except Exception as e:
         speak("can you please repeat")
-        query = None
+        query = r.recognize_google(audio,language='en-in')
     return query
 
 def main():
